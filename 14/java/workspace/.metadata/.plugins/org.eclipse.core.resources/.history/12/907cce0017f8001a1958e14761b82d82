@@ -1,0 +1,35 @@
+package ocm.ls.test;
+
+public class Main {
+	String sg;
+	double zl;
+	double jg;
+	double sj;
+	double gw;
+	public void main() {
+		if (sg.equals("苹果")) {
+			 jg=2.20*zl;
+		}else if (sg.equals("桔子")) {
+			 jg=2.0*zl;
+		}else if (sg.equals("葡萄")) {
+			 jg=1.8*zl;
+		}else if (sg.equals("香蕉")) {
+			 jg=1.6*zl;
+		}else {
+			jg=0;
+		
+		}	
+		 if(jg==0) {
+			System.out.println("无此水果");
+		}
+		 else if (sj>=jg) {
+			gw=sj-jg;
+			System.out.println(zl+"斤"+sg+jg+"元，找零："+gw+"元");
+		}
+	
+		else  {
+			System.out.println("你的余额不足");
+		}
+	}
+	
+}

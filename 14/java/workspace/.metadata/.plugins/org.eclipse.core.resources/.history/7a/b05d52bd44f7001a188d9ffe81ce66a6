@@ -1,0 +1,14 @@
+package com.mstf.t1;
+
+public class Cinema {
+
+	public static void main(String[] args) {
+
+		Movie[] movie = new Movie[1];
+		movie[0].setName("¡¶°¢·²´ï¡·");
+		movie[0].setType("¿Æ»Ã");
+		movie[0].setPrice(100);
+		
+	}
+
+}

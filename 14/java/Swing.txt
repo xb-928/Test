@@ -1,0 +1,7 @@
+1. 创建顶级父容器JFrame 
+2. 设置父容器的位置以及大小 setBounds(x, y,width,heigh);
+3. 设置顶级容器的布局 为绝对布局 setLayout(null)
+4. 创建控件 JLabel TJextFiled
+5. 设置控件的位置大小，属性
+6. 把控件添加到父容器 jFram.add()
+7. 设置JFrame 为可见 setVisible();

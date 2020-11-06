@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.io.*;
 import java.net.Socket;
 
@@ -14,7 +16,7 @@ public class ClientDemo {
         frame.setBounds(300,200,800,500);
         frame.setLayout(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        frame.setResizable(false);
         TextArea area = new TextArea();
         area.setBounds(50,30,700,300);
         area.setEditable(false);
@@ -28,6 +30,14 @@ public class ClientDemo {
         frame.add(scrollPane);
         frame.add(area);
         frame.setVisible(true);
+        jTextField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                if (e.getKeyChar() == KeyEvent.VK_ENTER) {
+
+                }
+            }
+        });
 
         try {
             Socket socket = new Socket("192.168.10.24",8888);

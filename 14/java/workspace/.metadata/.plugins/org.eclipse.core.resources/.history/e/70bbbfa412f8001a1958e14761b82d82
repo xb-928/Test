@@ -1,0 +1,21 @@
+package ocm.ls.test;
+
+public class Main {
+	String sg;
+	double zl;
+	double jg;
+	double zling;
+	public void main() {
+		if (sg.equals("Æ»¹û")) {
+			 jg=2.20*zl;
+		}else if (sg.equals("½Û×Ó")) {
+			 jg=2.0*zl;
+		}else if (sg.equals("ÆÏÌÑ")) {
+			 jg=1.8*zl;
+		}else if (sg.equals("Ïã½¶")) {
+			 jg=1.6*zl;
+		}
+		System.out.println(zl+"½ï"+sg+jg+"Ôª£¬ÕÒÁã£º"+zling+"Ôª");
+	}
+	
+}

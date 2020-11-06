@@ -1,0 +1,20 @@
+1. 定义电影类Movie（属性：电影名称name，电影类型type,电影价格price),
+2. 定义电影院类Cinema，在电影院类中添加电影类的数组Movie[]，
+对外开放（public）实现新增电影（在电影数组中添加一个元素，数组长度加1），
+查询电影（遍历电影数组，输出电影名称跟，电影类型，电影价格）的功能
+要求使用get set封装成员变量，不可在外部直接访问成员变量
+3. 新增一个接口 Play 里面有一个方法 playMovie(); Cinima 类实现本接口，
+并且随机放映一部电影 Random
+
+Movie 
+name String
+type String 
+price int 
+
+Cinema 
+Movie[] movies  = 
+oldLen + 1 
+
+void addMovie( Movie Movie) {
+    
+}

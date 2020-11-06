@@ -1,0 +1,18 @@
+package com.mstf.t1;
+
+public class Cinema {
+
+	public static void main(String[] args) {
+
+		Movie[] movie = new Movie[4];
+		movie[0] = new Movie("《阿凡达》","科幻",100);
+		movie[1] = new Movie("《阿凡达》","科幻",100);
+		movie[2] = new Movie("《阿凡达》","科幻",100);
+		movie[3] = new Movie("《阿凡达》","科幻",100);
+		for(Movie m:movie) {
+			System.out.println(m);
+		}
+		movie[0].show();
+	}
+
+}
