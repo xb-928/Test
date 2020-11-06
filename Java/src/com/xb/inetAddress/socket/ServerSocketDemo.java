@@ -17,7 +17,7 @@ public class ServerSocketDemo {
         frame.setBounds(300,200,800,500);
         frame.setLayout(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        frame.setResizable(false);
         TextArea area = new TextArea();
         area.setBounds(50,30,700,300);
         area.setEditable(false);
@@ -31,6 +31,7 @@ public class ServerSocketDemo {
         frame.add(scrollPane);
         frame.add(area);
         frame.setVisible(true);
+
         try {
             ServerSocket serverSocket = new ServerSocket(8888);
             area.append("服务端创建成功，等待客户端的连接..\n");
